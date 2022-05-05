@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_sound_scene">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondomusic" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/inicial"
+        android:layout_width="414dp"
+        android:layout_height="137dp"
+        android:background="#A8000000"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="245dp">
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="251dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/album"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/pausa"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/seekBar"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/continuar"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_stop_circle_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar"
+            app:layout_constraintVertical_bias="0.285"
+            tools:layout_editor_absoluteX="177dp" />
+
+        <ImageButton
+            android:id="@+id/continuar"
+            android:layout_width="40dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/seekBar"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_play_circle_filled_24"
+            app:layout_constraintEnd_toStartOf="@+id/pausa"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toEndOf="@+id/album"
+            app:layout_constraintTop_toTopOf="@+id/seekBar" />
+
+        <ImageButton
+            android:id="@+id/anterior"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/seekBar"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/pausa"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_arrow_left_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/siguiente"
+            app:layout_constraintStart_toEndOf="@+id/pausa"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/album"
+            android:layout_width="96dp"
+            android:layout_height="88dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/siguiente"
+            android:layout_width="49dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="36dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_arrow_right_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar"
+            app:layout_constraintVertical_bias="0.933" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

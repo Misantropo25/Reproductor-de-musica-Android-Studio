@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Salsa">
+        <item>Como se perdona - You Salsa</item>
+        <item>Lloraras - Oscar de Leon</item>
+        <item>Ahora quien - Marc Anthony</item>
+        <item>Deseandote - Frankie Ruiz</item>
+        <item>Vivir mi vida - Marc Anthony</item>
+    </string-array>
+
+    <string-array name="Huayno">
+        <item>Que linda flor - Silverio Urbina</item>
+        <item>Pio pio - Eusebio Grados</item>
+        <item>La Matarina - El Indio Mayta</item>
+        <item>Mi liendrosa - Carmencita Lara </item>
+        <item>Flor de retama interpretada - William Luna</item>
+    </string-array>
+
+    <string-array name="Country">
+        <item>I walk the Line - Johnny Cash </item>
+        <item>Jolene - Dolly Parton</item>
+        <item>The Gambler - Kenny Rogers </item>
+        <item>Always on my mind - Willie Nelson</item>
+        <item>I’m So Lonesome I Could Cry - Hank Williams</item>
+    </string-array>
+
+    <string-array name="Blues">
+        <item>Memphis Blues - Nat king cole</item>
+        <item>Crazy Blues - Mamie Smith</item>
+        <item>Pine Top Boogie - Pine Top Smith</item>
+        <item>Dust My Broom - Elmore James</item>
+        <item>Boogie Chillun - John Lee Hooker</item>
+    </string-array>
+
+    <string-array name="Bachata">
+        <item>Tus Cartas Llegan - Ramón Torres</item>
+        <item>Bachata Rosa - Juan Luis Guerra</item>
+        <item>Si tu estuvieras - Héctor Acosta El Torito</item>
+        <item>Por mi timidez - Anthony Santos</item>
+        <item>Propuesta Indecente - Romeo Santos</item>
+    </string-array>
+
+</resources>
